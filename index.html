@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="navbar bg-gray-200 mb-10">
+        <div class="navbar bg-gray-200 mb-10 mx-auto">
             <div class="navbar-start">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -43,9 +43,9 @@
     </header>
     <main>
         <!-- main container -->
-        <div class="flex flex-col mx-12 my-10 lg:flex-row">
+        <div class="flex flex-col lg:flex-row">
             <!-- shape container -->
-            <div class="flex-1 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+            <div class="flex-1 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                 <!-- Triangle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="images/triangle.png" alt="Shoes" /></figure>
@@ -53,9 +53,9 @@
                       <h2 class="card-title">Triangle</h2>
                       <p>Area (A) = 0.5 x b x h</p>
                       <p>
-                        <input type="text" class="boder w-20 text-xl px-2 bg-gray-300 text-center" name="" id="triangle-base" placeholder="base"><span class="ml-3">cm</span>
+                        <input type="number" class="boder w-20 text-xl px-2 bg-gray-300 text-center" name="" id="triangle-base" placeholder="base"><span class="ml-3">cm</span>
                         <!-- triangle height -->
-                        <input type="text" class="boder w-20 text-xl px-2 bg-gray-300 text-center ml-3" name="" id="triangle-height" placeholder="height"><span class="ml-3">cm</span>
+                        <input type="number" class="boder w-20 text-xl px-2 bg-gray-300 text-center ml-3" name="" id="triangle-height" placeholder="height"><span class="ml-3">cm</span>
                         <p class="text-1xl">Area: <span id="triangle-area">0</span>cm<sub>2</sub></p>
                       </p>
                       <div class="card-actions w-full">
@@ -70,9 +70,9 @@
                       <h2 class="card-title">Rectangle</h2>
                       <p>Area (A) = w x l</p>
                       <p>
-                        <input type="text" class="boder w-20 text-xl px-2 bg-gray-300 text-center" name="" id="rectangle-width" placeholder="width"><span class="ml-3">cm</span>
+                        <input type="number" class="boder w-20 text-xl px-2 bg-gray-300 text-center" name="" id="rectangle-width" placeholder="width"><span class="ml-3">cm</span>
                         <!-- rectangle length -->
-                        <input type="text" class="boder w-20 text-xl px-2 bg-gray-300 text-center ml-3" name="" id="rectangle-length" placeholder="length"><span class="ml-3">cm</span>
+                        <input type="number" class="boder w-20 text-xl px-2 bg-gray-300 text-center ml-3" name="" id="rectangle-length" placeholder="length"><span class="ml-3">cm</span>
                         <p class="text-1xl">Area: <span id="rectangle-area">0</span>cm<sub>2</sub></p>
                       </p>
                       <div class="card-actions w-full">
@@ -87,9 +87,9 @@
                       <h2 class="card-title">Parallelogram</h2>
                       <p>Area (A) = b x h</p>
                       <p>
-                        <input type="text" class="boder w-20 text-xl px-2 bg-gray-300 text-center" name="" id="parallelogram-base" placeholder="base"><span class="ml-3">cm</span>
+                        <input type="number" class="boder w-20 text-xl px-2 bg-gray-300 text-center" name="" id="parallelogram-base" placeholder="base"><span class="ml-3">cm</span>
                         <!-- parallelogram height -->
-                        <input type="text" class="boder w-20 text-xl px-2 bg-gray-300 text-center ml-3" name="" id="parallelogram-height" placeholder="height"><span class="ml-3">cm</span>
+                        <input type="number" class="boder w-20 text-xl px-2 bg-gray-300 text-center ml-3" name="" id="parallelogram-height" placeholder="height"><span class="ml-3">cm</span>
                         <p class="text-1xl">Area: <span id="parallelogram-area">0</span>cm<sub>2</sub></p>
                       </p>
                       <div class="card-actions w-full">
@@ -104,9 +104,9 @@
                       <h2 class="card-title">Ellipse</h2>
                       <p>Area (A) = πab</p>
                       <p>
-                        <input type="text" class="boder w-20 text-xl px-2 bg-gray-300 text-center" name="" id="ellipses-major-radiuses" placeholder="large"><span class="ml-3">cm</span>
+                        <input type="number" class="boder w-20 text-xl px-2 bg-gray-300 text-center" name="" id="ellipses-major-radiuses" placeholder="large"><span class="ml-3">cm</span>
                         <!-- parallelogram height -->
-                        <input type="text" class="boder w-20 text-xl px-2 bg-gray-300 text-center ml-3" name="" id="ellipses-minor-radiuses" placeholder="short"><span class="ml-3">cm</span>
+                        <input type="number" class="boder w-20 text-xl px-2 bg-gray-300 text-center ml-3" name="" id="ellipses-minor-radiuses" placeholder="short"><span class="ml-3">cm</span>
                         <p class="text-1xl">Area: <span id="ellipse-area">0</span>cm<sub>2</sub></p>
                       </p>
                       <div class="card-actions w-full">
@@ -121,9 +121,9 @@
                       <h2 class="card-title">Rhombus</h2>
                       <p>Area (A) = 0.5 x<span>b<sub>1</sub>x</span>b<sub>2</sub></span></p>
                       <p>
-                        <input type="text" class="boder w-20 text-xl px-2 bg-gray-300 text-center" name="" id="rhombus-major-base" placeholder="big"><span class="ml-3">cm</span>
+                        <input type="number" class="boder w-20 text-xl px-2 bg-gray-300 text-center" name="" id="rhombus-major-base" placeholder="big"><span class="ml-3">cm</span>
                         <!-- parallelogram small -->
-                        <input type="text" class="boder w-20 text-xl px-2 bg-gray-300 text-center ml-3" name="" id="rhombus-minor-base" placeholder="small"><span class="ml-3">cm</span>
+                        <input type="number" class="boder w-20 text-xl px-2 bg-gray-300 text-center ml-3" name="" id="rhombus-minor-base" placeholder="small"><span class="ml-3">cm</span>
                         <p class="text-1xl">Area: <span id="rhombus-area">0</span>cm<sub>2</sub></p>
                       </p>
                       <div class="card-actions w-full">
@@ -138,9 +138,9 @@
                       <h2 class="card-title">pentagon</h2>
                       <p>Area (A) = 0.5 p x a </p>
                       <p>
-                        <input type="text" class="boder w-20 text-xl px-2 bg-gray-300 text-center" name="" id="pentagon-perimeter" placeholder="perimeter"><span class="ml-3">cm</span>
+                        <input type="number" class="boder w-20 text-xl px-2 bg-gray-300 text-center" name="" id="pentagon-perimeter" placeholder="perimeter"><span class="ml-3">cm</span>
                         <!-- parallelogram height -->
-                        <input type="text" class="boder w-20 text-xl px-2 bg-gray-300 text-center ml-3" name="" id="pentagon-apothem" placeholder="apothem"><span class="ml-3">cm</span>
+                        <input type="number" class="boder w-20 text-xl px-2 bg-gray-300 text-center ml-3" name="" id="pentagon-apothem" placeholder="apothem"><span class="ml-3">cm</span>
                         <p class="text-1xl">Area: <span id="pentagon-area">0</span>cm<sub>2</sub></p>
                       </p>
                       <div class="card-actions w-full">
@@ -150,12 +150,15 @@
                   </div>
             </div>
             <!-- area calculator -->
-            <div class="w[400px]">
-                <div class="text-4xl">Area calculator</div>
+            <div class="w[400px] mb-10">
+                <div class="text-3xl ">Area calculator</div>
+                <div id="calculator-entry">
+
+                </div>
             </div>
         </div>
     </main>
-    <footer class="footer footer-center p-10 bg-blue-300 text-base-content rounded">
+    <footer class="footer footer-center p-10 bg-blue-300 text-base-content rounded mt-10">
         <nav class="grid grid-flow-col gap-4">
           <a class="link link-hover">About us</a> 
           <a class="link link-hover">Contact</a> 
